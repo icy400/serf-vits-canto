@@ -7,25 +7,25 @@
   <meta name="description" content="简洁的 GitHub Pages TTS 展示页：论文摘要、模型结构图、两张音频表格。" />
   <style>
     :root {
-      --bg: #0b0f17; --panel: #121826; --muted: #94a3b8; --text: #e5e7eb; --accent: #38bdf8;
-      --border: #233249; --radius: 14px;
+      --bg: #ffffff; --panel: #ffffff; --muted: #6b7280; --text: #111827; --accent: #0ea5e9;
+      --border: #e5e7eb; --radius: 14px;
     }
     * { box-sizing: border-box; }
     body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans SC", Helvetica, Arial; background: var(--bg); color: var(--text); }
     .wrap { max-width: 1024px; margin: 0 auto; padding: 28px 18px 60px; }
     h1 { font-size: 28px; margin: 0 0 6px; }
     h2 { font-size: 20px; margin: 26px 0 12px; }
-    p, li { line-height: 1.65; color: #e8edf6; }
+    p, li { line-height: 1.65; color: #1f2937; }
     .panel { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; }
     figure { margin: 0; }
     figcaption { color: var(--muted); font-size: 12px; margin-top: 6px; }
 
     table { width: 100%; border-collapse: collapse; font-size: 14px; }
     caption { text-align: left; color: var(--muted); margin-bottom: 8px; }
-    thead th { text-align: left; font-weight: 700; background: #0f1627; }
+    thead th { text-align: left; font-weight: 700; background: #f8fafc; }
     th, td { padding: 10px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
-    tbody tr:hover { background: rgba(255,255,255,0.02); }
-    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; color: #cbd5e1; }
+    tbody tr:hover { background: rgba(0,0,0,0.03); }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; color: #334155; }
     audio { width: 100%; display: block; }
     .muted { color: var(--muted); }
     .hint { font-size: 12px; color: var(--muted); margin-top: 10px; }
@@ -37,7 +37,8 @@
 <body>
   <div class="wrap">
     <header>
-      <h1>SERF-VITS-Canto Demo</h1>
+      <h1>语音合成演示（GitHub Pages）</h1>
+      <p class="muted">本页为简洁版：摘要 → 模型结构图 → 两张音频表格（对比表 / 情感表）。编辑本页顶部注释按需替换内容。</p>
     </header>
 
     <!-- 使用说明（仅供编辑者查看）：
@@ -51,7 +52,7 @@
     <section id="abstract" class="panel" aria-labelledby="abstract-title">
       <h2 id="abstract-title">论文摘要</h2>
       <p>
-        Despite rapid progress in emotional speech synthesis, current TTS systems still lack fine-grained, controllable emotion, often misalign intended affect with realized prosody, and exhibit unstable pitch, a challenge amplified in complex tonal languages such as Cantonese. We present SERF-VITS-Canto, a VITS-based Cantonese TTS that integrates a spherical emotion representation with frame-level prosodic modeling. The method jointly predicts pitch and energy and fuses them with the emotion representation as conditioning signals throughout the generation pathway, aligning expressiveness with rhythmic realization while preserving speaker characteristics. Experiments on a Cantonese corpus indicate improved naturalness, stronger emotion controllability, more consistent relations between emotion and prosody, and greater pitch stability for Cantonese emotional TTS.
+        （在此粘贴你的论文摘要简介。建议 100–250 字，简要说明研究动机、方法、关键模块、评价指标与主要结论。）
       </p>
     </section>
 
@@ -181,4 +182,5 @@
   </div>
 </body>
 </html>
+
 
